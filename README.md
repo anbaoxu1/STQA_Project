@@ -158,4 +158,3 @@ SQL 相关实验
 
 使用 llm_tranformer_stock_qwen_ground_truth_wf_template.py 运行 Ground Truth 消融实验，与 direct_pred_prompt_baseline_english.json 的直接预测结果进行对比。
 
-你如果需要，我可以在这个 README 基础上再帮你加上具体运行命令示例（如 Python 启动参数、数据路径约定等）。
