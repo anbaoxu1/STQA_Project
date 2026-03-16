@@ -39,6 +39,14 @@ Functions:
 
 Defines templates for QA query-type datasets, mainly used for “question–answer” style task modeling.
 
+
+Test code for 100 real spoken sentences
+File: mian_test_agent_spoken_100_qwen_multi.py
+
+Functions: 
+
+This file is used to obtain the experimental results for the 100 real spoken samples.
+
 QA prediction-type template
 File: template_predict_QA.py
 
