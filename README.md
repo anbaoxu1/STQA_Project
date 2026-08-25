@@ -1,4 +1,14 @@
+STQA: A Benchmark for Stock-Focused Tabular Question Answering over Historical and Forecasted Data
+This work has been accepted for publication in EMNLP Findings-2026.
+
 <img width="2839" height="1013" alt="picture2" src="https://github.com/user-attachments/assets/83130334-3194-483f-847b-d7dd407d1de1" />
+
+This repository contains the dataset and code released for the paper "STQA: A Benchmark for Stock-Focused Tabular Question Answering over Historical and Forecasted Data".
+
+Stock market analysis inherently requires composite reasoning over historical records and future projections, yet existing benchmarks remain fragmented across isolated tasks. We introduce STQA (Stock-focused Tabular Question Answering), an end-to-end benchmark designed to systematically evaluate natural-language question answering over historical data, numerical forecasts, and forecast-based reasoning. Built on a large-scale financial dataset, STQA covers 4,417 stocks and contains 31,400 question–answer pairs derived from expert-crafted templates, accompanied by fine-grained intent and slot annotations. To operationalize this benchmark, we present SQFRS (Stock Query–Forecast–Reasoning System), an agent-based unified framework that orchestrates SQL retrieval and time-series forecasting tools. Experiments demonstrate that while current large language models perform well on historical queries, forecast-based reasoning poses a substantial challenge, revealing critical bottlenecks in tool coordination and reasoning under uncertainty. 
+
+Requirements and Installation
+If you want to get the same result with the paper, please follow below
 
 Project README
 This project contains experimental code and data for multi-agent and multi-task scenarios, including main experiments, ablation experiments (Ground Truth), QA data generation and prediction, SQL query verification, as well as time series forecasting and stock trend prediction modules.
