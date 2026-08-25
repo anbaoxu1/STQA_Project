@@ -24,3 +24,32 @@ jieba==0.42.1
 psycopg2-binary==2.9.10
 
 
+Importing Data
+Create a New Database
+
+First, create a new database. Here, we use a PostgreSQL database deployed in a Docker container. Please ensure that Docker is installed on your system before proceeding.
+
+Run the following command to create the PostgreSQL container:
+
+docker run -id \
+  --name=my-postgresql \
+  -v ./data:/var/lib/postgresql/data \
+  -p 1213:5432 \
+  -e POSTGRES_PASSWORD='123456' \
+  -e POSTGRES_USER='***' \
+  -e LANG=C.UTF-8 \
+  --restart=always \
+  postgres:alpine
+
+After the command is executed successfully, the PostgreSQL database will be accessible through port 1213.
+
+Read and Import Tables
+
+Read all tables located in the tables directory and import them into the newly created PostgreSQL database.
+
+You can run the following script to complete the database setup:
+
+Code/Input_to_POSTGRE.py
+
+Before running the script, make sure to update the PostgreSQL username and password in the script to match the credentials configured when creating the Docker container.
+
