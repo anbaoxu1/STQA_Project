@@ -1,3 +1,5 @@
+<img width="2839" height="1013" alt="picture2" src="https://github.com/user-attachments/assets/83130334-3194-483f-847b-d7dd407d1de1" />
+
 Project README
 This project contains experimental code and data for multi-agent and multi-task scenarios, including main experiments, ablation experiments (Ground Truth), QA data generation and prediction, SQL query verification, as well as time series forecasting and stock trend prediction modules.
 
