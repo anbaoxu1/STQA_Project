@@ -1,15 +1,20 @@
-Container image:
+## PostgreSQL Container Setup
 
-postgres.tar is the container image file. After extraction/import, it becomes the postgres:alpine image, which will be used for subsequent container creation.
+### Container Image
 
-Container creation command:
+`postgres.tar` is the container image file. After extraction or import, it becomes the `postgres:alpine` image, which is used for subsequent container creation.
 
-docker run -id --name=my-postgresql -v ./data:/var/lib/postgresql/data -p 1213:5432 -e POSTGRES_PASSWORD='123456' -e POSTGRES_USER='***' -e LANG=C.UTF-8 --restart=always postgres:alpine
+### Container Creation
 
-Container startup/access command:
+Run the following command to create the PostgreSQL container:
 
-docker exec -it my-postgresql /bin/bash
-
-Database creation/access command:
-
-psql postgres ***
+```bash
+docker run -id \
+  --name=my-postgresql \
+  -v ./data:/var/lib/postgresql/data \
+  -p 1213:5432 \
+  -e POSTGRES_PASSWORD='123456' \
+  -e POSTGRES_USER='***' \
+  -e LANG=C.UTF-8 \
+  --restart=always \
+  postgres:alpine
